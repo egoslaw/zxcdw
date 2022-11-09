@@ -1,0 +1,18 @@
+﻿@{
+	ViewData["Title"] = "Upload and Save";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to Upload some file and Save it after this.</p>
+
+<form method="post">
+	<div>Specify upload path here:</div>
+	<input id="uploadInput" name="uploadInput" type="text" value=@TempData["uploadInputVal"]></input>
+	<button id="uploadButton" asp-action="Upload">Upload</button>
+	<div>@TempData["uploadVal"]</div>
+	<br/>
+	<div>Specify save path here:</div>
+	<input id="saveInput" name="saveInput" type="text" value=@TempData["saveInputVal"]></input>
+	<button id="saveButton" asp-action="Save">Save</button>
+	<div>@TempData["saveVal"]</div>
+</form>
