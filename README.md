@@ -1,2 +1,3 @@
 - npm i
+- start WebApp
 - npm start (from /TestsPlaywright)
